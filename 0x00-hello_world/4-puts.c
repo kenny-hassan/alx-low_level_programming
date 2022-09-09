@@ -1,4 +1,9 @@
 #include <stdio.h>
-int main(void){
-	puts("Programming is like bukilding a multilinguakl puzzle");
-	return(0);}
+int main(void)
+	/**
+	 * task 4: print using puts
+	 */
+{
+	puts("Programming is like building a multilingual puzzle");
+	return (0);
+}
