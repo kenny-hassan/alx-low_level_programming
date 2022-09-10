@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	char i;
+	char i,n;
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
@@ -15,7 +15,8 @@ int main(void)
 	{
 		putchar(i);
 	}
-	putchar("\n")
+	n = "%n"
+	putchar(n)
 	return (0);
 
 
