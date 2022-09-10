@@ -1,21 +1,15 @@
 #include <stdio.h>
 /**
- * main -uper and lower case
+ * main - entry point
  * Return: 0
  */
 int main(void)
 {
-	char i;
-
-	for (i = 'a'; i <= 'z'; i++)
-	{
-		putchar(i);
-	}
-	for (i = 'A'; i <= 'Z'; i++)
-	{
-		putchar(i);
-	}
+	char a;
+	for (a = 'a'; a <= 'z' ; a++)
+		putchar(a);
+	for (a = 'A'; a <= 'Z'; a++)
+		putchar(a);
+	putchar('\n');
 	return (0);
-
-
 }
