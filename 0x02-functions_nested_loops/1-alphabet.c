@@ -1,4 +1,4 @@
-#include <kenny.h>
+#include <main.h>
 /**
  * print_alphabet - print lower case
  * Return: 0
