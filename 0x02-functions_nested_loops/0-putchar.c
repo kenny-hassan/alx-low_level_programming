@@ -1,6 +1,6 @@
-#include <kenny.h>
+#include <main.h>
 /**
- * main - 0. _putchar
+ * main - main.h header
  * Return: 0
  */
 int main(void)
