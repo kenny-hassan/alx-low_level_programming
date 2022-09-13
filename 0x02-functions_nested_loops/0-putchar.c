@@ -1,12 +1,18 @@
-#include <stdio.h>
+#include <kenny.h>
 /**
  * main - 0. _putchar
  * Return: 0
  */
 int main(void)
 {
-	char i[10] = "_putchar\n";
-
-	putchar(i);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
