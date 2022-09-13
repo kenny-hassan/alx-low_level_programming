@@ -10,7 +10,7 @@ int _putchar(char k);
  * function - __print char
  *
  */
-void print_alphhabet(void);
+void print_alphabet(void);
 /**
  * print_alphabet - print a-z
  */
