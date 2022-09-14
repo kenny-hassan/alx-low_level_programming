@@ -15,6 +15,6 @@ int main(void)
 			j += i;
 		}
 	}
-	puts(j);
+	printf("%d\n", j);
 	return (0);
 }
