@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int _isalpha - reads alphabet
+ * _isalpha - reads alphabet
  * @a: arguement
  * Return: 1 or 0
  */
