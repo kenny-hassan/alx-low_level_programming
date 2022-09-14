@@ -15,4 +15,5 @@ void print_alphabet(void);
  * print_alphabet - print a-z
  */
 void print_alphabet_x10(void);
+int _islower(int k);
 #endif
