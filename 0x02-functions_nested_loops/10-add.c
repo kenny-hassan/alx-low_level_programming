@@ -1,10 +1,11 @@
 #include "main.h"
 /**
- * add - adding i+j
+ * add - add i+j
  * @i: arguement 1
  * @j: arguement 2
+ * Return: 1
  */
-int add(int i, int j)
+int add(int i, int j);
 {
 	return (i + j);
 }
