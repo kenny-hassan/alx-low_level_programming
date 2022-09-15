@@ -11,9 +11,9 @@ int main(void)
 	float y = x + 1;
 	float z = x + y;
 
-	for (i = 1; i < 98; i++)
+	for (i = 0; i < 98; i++)
 	{
-		printf("%.0f, ", z);
+		printf("%.0f", z);
 		x = y;
 		y = z;
 		z = x + y;
