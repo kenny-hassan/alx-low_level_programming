@@ -5,14 +5,14 @@
  */
 int main(void)
 {
-	int i;
+	int i = 0;
 	long int x = 0;
 	long int y = x + 1;
 	long int z = x + y;
 	
 	while (z < 4000000)
 	{
-		if (z % 2 ==0)
+		if (z % 2 == 0)
 		{
 			i += z;
 		}
