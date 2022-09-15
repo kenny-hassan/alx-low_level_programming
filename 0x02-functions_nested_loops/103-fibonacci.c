@@ -20,6 +20,6 @@ int main(void)
 		y = z;
 		z = x + y;
 	}
-	printf("%d", i);
+	printf("%d\n", i);
 	return (0);
 }
