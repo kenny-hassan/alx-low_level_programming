@@ -16,11 +16,11 @@ int main(void)
 		x = y;
 		y = z;
 		z = x + y;
-		if (i < 50)
+		if (i < 49)
 		{
 			printf(", ");
 		}
 	}
-	printf("n");
+	printf("\n");
 	return (0);
 }
