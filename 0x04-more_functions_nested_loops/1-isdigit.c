@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _isdigit - digit find
  * @c: char
