@@ -1,15 +1,11 @@
-#include "main.h"
-
 /**
  * _isdigit - digit find
- * @i: char
+ * @c: char
  * Return: bool
  */
-int _isdigit(int i)
+int _isdigit(int c)
 {
-	if (i >= '0' && i <= '9')
-	{
+	if (c >= '0' && c <= '9')
 		return (1);
-	}
 	return (0)
 }
