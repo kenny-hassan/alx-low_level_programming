@@ -1,53 +1,29 @@
 #include <stdio.h>
-
 /**
- * main - prints the first 98 Fibonacci
- * Return: Always 0.
+ * main - main function
+ * Return: nothing
  */
 
 int main(void)
 {
-	int i;
-	unsigned long a = 0;
-	unsigned long b = 2;
-	unsigned long sum;
-	unsigned long j;
-	unsigned long k;
-	unsigned long x;
-	unsigned long y;
-	unsigned long n;
-	unsigned long m;
+	int counter = 2;
 
-	for (i = 0; i < 92; i++)
+	float a = 1;
+	float b = a + 1;
+	float c = a + b;
+
+	printf("%.0f, ", a);
+	printf("%.0f, ", b);
+	while (counter < 98)
 	{
-		sum = a + b;
-		printf("%lu, ", sum);
-
+		counter++;
+		printf("%.0f", c);
 		a = b;
-		b = sum;
-	}
-	j = a / 10000000000;
-	x = b / 10000000000;
-	k = a % 10000000000;
-	y = b % 10000000000;
-
-	for (i = 93; i < 99; i++)
-	{
-		n = j + k;
-		m = x + y;
-		if (x + y > 9999999999)
+		b = c;
+		c = a + b;if (counter < 98)
 		{
-			n += 1;
-			m %= 10000000000;
-		}
-		printf("%lu%lu", n, m);
-		if (i != 98)
 			printf(", ");
-
-		j = x;
-		k = y;
-		x = n;
-		y = m;
+		}
 	}
 	printf("\n");
 	return (0);
