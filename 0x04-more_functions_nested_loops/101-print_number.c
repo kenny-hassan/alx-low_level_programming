@@ -5,9 +5,8 @@
  */
 void print_number(int n)
 {
-	int i, d;
-
-	d = 1;
+	int i;
+	int d = 1;
 	unsigned int x = n;
 	unsigned int y = n;
 	int c = 0;
