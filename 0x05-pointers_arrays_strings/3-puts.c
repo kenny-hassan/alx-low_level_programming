@@ -1,5 +1,4 @@
 #include "main.h"
-#include "2-strlen.c"
 /**
  * _puts - print a string
  * @str: string character
@@ -12,5 +11,5 @@ void _puts(char *str)
 	{
 		_putchar(*(str + i));
 	}
-	_putchar ('\n');
+	_putchar('\n');
 }
