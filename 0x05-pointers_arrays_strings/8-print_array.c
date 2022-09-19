@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - standard io
+ * print_array - prints an array
  * @a: pointer of array
  * @n: num of array
- * print_array - print an array
  */
 
 void print_array(int *a, int n)
