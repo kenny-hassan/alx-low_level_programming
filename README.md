@@ -1,8 +1,5 @@
-0x00. C - Hello, World
+0x05. C - Pointers, arrays and strings
 
-0. Preprocessor
-Write a script that runs a C file through the preprocessor and save the result into another file.
-	
-	1.The C file name will be saved in the variable $CFILE
+task 0. 98 Battery st.
+A function that takes a pointer to an int as parameter and updates the value it points to to 98. Prototype: void reset_to_98(int *n);
 
-	2.The output should be saved in the file c
