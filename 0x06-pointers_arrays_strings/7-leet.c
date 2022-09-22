@@ -6,7 +6,7 @@
  */
 char *leet(char *str)
 {
-	char sp_C[] = "aeotl";
+	char sp_C[] = "OLEAT";
 	int i, j;
 
 	for (i = 0; str[i] != '\0'; i++)
