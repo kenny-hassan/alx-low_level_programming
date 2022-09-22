@@ -15,8 +15,7 @@ char *leet(char *str)
 		{
 			if (str[i] == sp_C[j] || str[i] - 32 == sp_C[j])
 			{
-				str[i] = sp_C[j + 1];
-				break;
+				str[i] = j + '0';
 			}
 		}
 	}
