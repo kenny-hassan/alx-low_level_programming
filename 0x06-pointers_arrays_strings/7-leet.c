@@ -6,16 +6,16 @@
  */
 char *leet(char *str)
 {
-	char sp_C[] = "a4A4e3E3o0O0t7T7l1L1";
+	char sp_C[] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 	int i, j;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		for (j = 0; sp_C[j] != '\0'; j++)
 		{
-			if (str[i] == sp_C[j])
+			if (str[i] == sp_C[j] || str[i] - 32 == sp_C[j])
 			{
-				str[i] = sp_C[j + 1];
+				str[i] = j + '0';
 			}
 		}
 	}
