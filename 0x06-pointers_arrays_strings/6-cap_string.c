@@ -6,22 +6,24 @@
  */
 int _indxf(char a)
 {
-	int i;
-	
-	char capArr[13] = {'\n', '\t', ' ', '.', ',', ';', ',', '!', '?', '(',')', '{', '}'};
+	int i, n = 13;
+	char arr[];
+
+	arr[n] = {'\n', '\t', ' ', '.', ',', ';', ',', '!', '?', '(', ')', '{', '}'};
+
 	for (i = 0; i < 13; i++)
 	{
-		if (capArr[i] == a)
+		if (arr[i] == a)
 			return (1);
 	}
 	return (0);
 }
 
 /**
- *  * cap_string - capitalizes string
- *   * @s: string char
- *    * Return: capitalized string
- *     */
+ * cap_string - capitalizes string
+ * @s: string char
+ * Return: capitalized string
+ */
 char *cap_string(char *s)
 {
 	int i;
