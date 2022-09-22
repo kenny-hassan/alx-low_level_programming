@@ -9,5 +9,5 @@ void reverse_array(int *a, int n);
 char *string_toupper(char *);
 int _strlen(char *s);
 char *string_toupper(char *a_z);
-char *cap_string(char *);
+char *cap_string(char *str);
 #endif
