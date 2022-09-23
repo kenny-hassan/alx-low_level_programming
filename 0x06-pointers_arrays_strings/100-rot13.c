@@ -15,7 +15,7 @@ char *rot13(char *str)
 		for (y = 0; y < 54; y++)
 		{
 			if (((str[x] <= 'z' && str[x] >= 'a') ||
-			(str[x] <= 'Z' && str[x] >= 'A')) && str[x] == input[ii])
+			(str[x] <= 'Z' && str[x] >= 'A')) && str[x] == alpha[y])
 			{
 				str[x] = c_alpha[y];
 				break;
