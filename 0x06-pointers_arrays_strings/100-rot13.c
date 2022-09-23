@@ -11,13 +11,14 @@ char *rot13(char *str)
 	int x, y;
 	char i = str[x] <= 'z';
 	char j = str[x] >= 'a';
-	char k = str[x] <= 'Z' && str[x] >= 'A';
+	char k = str[x] <= 'Z';
+	char l = str[x] >= 'A';
 
 	for (x = 0; str[x] != '\0'; x++)
 	{
 		for (y = 0; y < 54; y++)
 		{
-			if ((i && j || (k)) && str[x] == alpha[y])
+			if ((i && j || (k && l)) && str[x] == alpha[y])
 			{
 				str[x] = c_alpha[y];
 				break;
