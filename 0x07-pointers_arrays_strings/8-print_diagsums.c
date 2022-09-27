@@ -19,7 +19,5 @@ void print_diagsums(int *a, int size)
 		k += a[i];
 		a -= size;
 	}
-	_putchar (j);
-	_putchar (k);
-	_putchar ('\n');
+	printf("%d, %d\n", j, k);
 }
