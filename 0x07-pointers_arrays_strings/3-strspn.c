@@ -5,7 +5,7 @@
  * @accept: accepted bytes
  * Return: returns value
  */
-unsigned int _strspn(char *s, char *accept)
+unsigned int *_strspn(char *s, char *accept)
 {
 	int i, j;
 	unsigned int result = 0;
