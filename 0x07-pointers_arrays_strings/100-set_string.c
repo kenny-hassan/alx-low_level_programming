@@ -5,4 +5,6 @@
  * @to: the value to assign
  */
 void set_string(char **s, char *to)
+{
 	*s = to;
+}
