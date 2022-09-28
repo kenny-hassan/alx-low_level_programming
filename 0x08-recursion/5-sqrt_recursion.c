@@ -15,7 +15,7 @@ int test(int i, int n)
 		if (i > n)
 			return (-1);
 		m = test(i + 1, n);
-		return (j + 1);
+		return (m + 1);
 	}
 	return (0);
 }
