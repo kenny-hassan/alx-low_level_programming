@@ -21,9 +21,9 @@ int StringCheck(char *s)
 }
 /**
  * main - function
- *  @argc: argument
- *  @argv: pointer
- *  Return: 0
+ * @argc: argument
+ * @argv: pointer
+ * Return: 0
  */
 int main(int argc, char  *argv[])
 {
