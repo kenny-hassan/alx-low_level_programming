@@ -4,9 +4,9 @@
 #include <string.h>
 /**
  * main - main function
- * @argc: argument
- * @argv: pointer arguments
- * Return:  0
+ * @argc: argumentc
+ * @argv: vector of arguments
+ *Return: always 0
  */
 int main(int argc, char  *argv[])
 {
@@ -26,15 +26,21 @@ int main(int argc, char  *argv[])
 		while (money > 0)
 		{
 			if (money % 25 == 0)
+			{
 				money -= 25;
-			else if (money % 10 == 0)
+			} else if (money % 10 == 0)
+			{
 				money -= 10;
-			else if (money % 5 == 0)
+			} else if (money % 5 == 0)
+			{
 				money -= 5;
-			else if (money % 2 == 0)
+			} else if (money % 2 == 0)
+			{
 				money -= 2;
-			else
+			} else
+			{
 				money--;
+			}
 			coins++;
 		}
 		printf("%d\n", coins);
