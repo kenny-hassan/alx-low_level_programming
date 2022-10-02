@@ -1,58 +1,29 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#define UNUSED(x) (void)(x)
 /**
- * StringCheck - checks string
- * @s: string to check
- * Return: boolean
+ * main - adds numbers
+ * @argc: number of arguments passed to the function
+ * @argv: argument vector of pointers to strings
+ * Return: 0 if no errors, else 1
  */
-int StringCheck(char *s)
+int main(int argc, char *argv[])
 {
-	int i = 0;
+	int a = 0, i, j;
 
-	for (; s[i] != '\0'; i++)
+	for (i = 1; i < argc; i++)
 	{
-		if (!isdigit(s[i]))
+		for (j = 0; argv[i][j]; j++)
 		{
-			return (0);
-		}
-	}
-	return (1);
-}
-/**
- * main - main function
- * @argc: argumentc
- * @argv: vector of arguments
- *Return: always 0
- */
-int main(int argc, char  *argv[])
-{
-	int i;
-	int result = 0;
-
-	if (argc > 1)
-	{
-		for (i = 1; i < argc; i++)
-		{
-			if (StringCheck(argv[i]))
+			if (isdigit(argv[i][j]) == 0)
 			{
-				result += atoi(argv[i]);
-			}
-			else
-			{
-				printf("Error\n");
+				puts("Error");
 				return (1);
 			}
 		}
-		printf("%d\n", result);
-		return (0);
 	}
-	else
-	{
-		printf("%d\n", 0);
-		return (1);
-	}
-
+	for (i = 1; i < argc; i++)
+		a += atoi(argv[i]);
+	printf("%d\n", a);
+	return (0);
 }
