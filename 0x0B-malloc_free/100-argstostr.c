@@ -1,12 +1,14 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
- /**
-  * argstostr - concatenate all arguments of your program with newline
+
+/**
+  * argstostr - main function
   * @ac: argument count
   * @av: double pointer to array of strings passed to main
   * Return: Null if fail, else return pointer to new string
   */
+
 char *argstostr(int ac, char **av)
 {
 	char *a, *retp;
