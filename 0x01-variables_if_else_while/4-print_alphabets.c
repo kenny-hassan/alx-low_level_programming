@@ -1,17 +1,22 @@
-#include "main.h"
+#include <stdio.h>
 /**
- * print_most_numbers - print all numbers except 2 and 4
- * Return: 0 on success.
+ * main - entry point
+ *
+ * Return: alway returns 0
+ *
  */
-void print_most_numbers(void)
+int main(void)
 {
-	int i = 0;
+	char a;
 
-	while (i <= 9)
+	for (a = 'a'; a <= 'z' ; a++)
 	{
-		if (i != 2 && i != 4)
-			_putchar(i + '0');
-		++i;
+		if (a == 'q' || a == 'e')
+		{
+			continue;
+		}
+		putchar(a);
 	}
-	_putchar('\n');
+	putchar('\n');
+	return (0);
 }
