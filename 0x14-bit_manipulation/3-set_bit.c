@@ -2,8 +2,8 @@
 #include "2-get_bit.c"
 /**
  * set_bit - sets a bit
- * @n: integer to grab 
- *
+ * @n: integer to grab
+ * @index: index
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
