@@ -1,9 +1,10 @@
 #include "main.h"
 #include "2-get_bit.c"
 /**
- * set_bit - sets a bit
+ * set_bit - set bit
  * @n: integer to grab
  * @index: index
+ * Return: -1 or 1
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
